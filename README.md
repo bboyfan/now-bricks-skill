@@ -14,7 +14,7 @@
 - **25+ subsystem manuals**: Every Bricks subsystem documented with exact key names, verified schemas, and anti-pattern warnings.
 - **16 ready-to-use UI patterns**: Complete JSON layouts for Hero, Pricing, Cards, FAQ, Forms, Modals, and more.
 
-This skill was built from a combination of CodeerHQ's official MCP/Abilities API architecture, WPGaurav's rapid JSON authoring methodology, and production optimizations derived from real-world site work on [Lumia 慕光婚禮所](https://lumiawedding.com).
+This skill was built from a combination of CodeerHQ's official MCP/Abilities API architecture, WPGaurav's rapid JSON authoring methodology, and production optimizations derived from real-world Bricks Builder site work.
 
 ---
 
@@ -231,21 +231,18 @@ git clone https://github.com/bboyfan/now-bricks-skill
 
 ## Changelog
 
-See [`/Users/bboyfan/Documents/慕光網站/CHANGELOG.md`](https://github.com/bboyfan/now-bricks-skill) for the full project changelog.
-
 Key milestones:
 - **2026-09-30** — Added Rules 8–10 (native links, centralized CSS, WP-CLI guard). Corrected Theme Styles schema to verified Bricks 2.0+ group nesting. Updated `style-settings.md` link control, `elements.md` anti-pattern warnings.
-- **2026-09-29** — Full-site native link migration (header, footer, homepage, 12 inner pages). Theme Styles integration with `css.stylesheet`. Color palette setup. CSS consolidation (120 KB redundancy eliminated from 12 inner pages).
-- **2023–2024** — Initial skill foundation (CodeerHQ MCP architecture + WPGaurav JSON authoring + 16 patterns).
+- **2026-09-29** — Full-site native link migration, Theme Styles integration with `css.stylesheet`, color palette setup, CSS consolidation.
+- **2023–2024** — Initial skill foundation (JSON authoring patterns + 16 UI patterns).
 
 ---
 
 ## Credits
 
-- **MCP / Abilities architecture**: [CodeerHQ Bricks MCP Server](https://github.com/cofeerhq/bricks-mcp)
-- **JSON authoring patterns**: Inspired by WPGaurav's Bricks rapid-authoring workflow
-- **Production optimizations**: Real-world site engineering on [Lumia 慕光婚禮所](https://lumiawedding.com) by WENSZU (溫釲)
-- **Maintained by**: [@bboyfan](https://github.com/bboyfan)
+Inspired by:
+- [wpgaurav/bricks-skills](https://github.com/wpgaurav/bricks-skills) — rapid JSON authoring workflow and pattern library
+- [codeerhq/bricks-skills](https://github.com/codeerhq/bricks-skills) — Bricks Abilities API architecture and MCP tooling
 
 ---
 
