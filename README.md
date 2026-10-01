@@ -1,18 +1,20 @@
 # now-bricks-skill
 
 > **Bricks Builder 2.4+ AI Agent Operational Skill**
-> A complete, production-hardened master manual for AI agents (Antigravity / Gemini CLI) operating Bricks Builder sites — from paste-ready JSON authoring to live MCP/Abilities database operations.
+> A complete, production-hardened master manual for AI agents operating Bricks Builder sites — from paste-ready JSON authoring to live MCP/Abilities database operations.
 
 ---
 
 ## What is this?
 
-`now-bricks-skill` is a **Gemini CLI / Antigravity skill** that gives an AI agent full operational mastery of Bricks Builder 2.4+. It covers:
+A structured knowledge base that gives any AI agent full operational mastery of Bricks Builder 2.4+. It covers:
 
 - **JSON authoring**: Generating clipboard-paste and template-import JSON with correct structure, style keys, and element hierarchy.
-- **Live site operations**: Using the official Bricks MCP Adapter and WP-CLI Abilities API to read and write page elements, templates, theme styles, and the color palette directly to the database.
+- **Live site operations**: Using WP-CLI, the Bricks Abilities API, or any MCP-compatible tool to read and write page elements, templates, theme styles, and the color palette directly to the database.
 - **25+ subsystem manuals**: Every Bricks subsystem documented with exact key names, verified schemas, and anti-pattern warnings.
 - **16 ready-to-use UI patterns**: Complete JSON layouts for Hero, Pricing, Cards, FAQ, Forms, Modals, and more.
+
+Works with any AI coding agent that supports markdown context files — Codex, Cursor, Windsurf, Gemini CLI, and similar tools. Point your agent at `SKILL.md` as the entry point.
 
 This skill was built from a combination of CodeerHQ's official MCP/Abilities API architecture, WPGaurav's rapid JSON authoring methodology, and production optimizations derived from real-world Bricks Builder site work.
 
@@ -193,25 +195,20 @@ Do **not** duplicate identical CSS across multiple pages. Put reusable layout an
 
 ## Installation
 
-### Option 1: Antigravity / Gemini CLI (Recommended)
-
-```bash
-# Clone into the Bricks skills directory
-git clone https://github.com/bboyfan/now-bricks-skill ~/.bricks/skills/bricks
-
-# Symlink so Antigravity / Gemini CLI can discover it
-ln -sf ~/.bricks/skills/bricks ~/.gemini/skills/bricks
-```
-
-The skill is auto-discovered when the agent starts. The agent will read `SKILL.md` as its operational entry point.
-
-### Option 2: Manual reference
-
-Clone anywhere and provide `SKILL.md` to any AI agent as context. The routing table in Section 2 will guide the agent to the correct reference for any task.
+Clone the repo and point your AI agent at `SKILL.md` as the context entry point.
 
 ```bash
 git clone https://github.com/bboyfan/now-bricks-skill
 ```
+
+### Agent-specific setup
+
+| Agent | How to load |
+|-------|-------------|
+| **Gemini CLI / Antigravity** | Clone to `~/.bricks/skills/bricks`, then `ln -sf ~/.bricks/skills/bricks ~/.gemini/skills/bricks` — auto-discovered on startup |
+| **OpenAI Codex / codex CLI** | Add the repo path to your `codex.md` or project instructions; reference `SKILL.md` directly |
+| **Cursor / Windsurf** | Add repo path to `.cursorrules` / project rules; reference `SKILL.md` as additional context |
+| **Any other agent** | Provide `SKILL.md` as system context or a pinned document — the routing table guides the agent to the right reference for each task |
 
 ---
 
