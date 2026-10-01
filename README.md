@@ -128,9 +128,24 @@ bricks-get-design-context  →  active palette IDs, global classes, component di
 | Reusable component | `create-component` |
 
 **Step 3 — Flush & verify:**
+
+Flush WP object cache, then purge your server-side page cache. Method depends on your stack:
+
 ```bash
-wp cache flush && curl -X PURGE http://127.0.0.1:6081/.*
+# WP object cache (universal)
+wp cache flush
+
+# Kinsta / Redis
+wp cache flush && wp kinsta cache purge --all
+
+# Varnish
+varnishadm 'ban req.url ~ .'
+
+# Nginx FastCGI / WP Rocket / W3TC / similar
+# Use the plugin's WP-CLI command or admin UI
 ```
+
+Then confirm the changes on the frontend.
 
 ---
 
