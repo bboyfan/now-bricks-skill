@@ -102,7 +102,7 @@ Find the exact reference manual for any specific Bricks task:
    - Instance nodes (`cid: "..."`) must **omit `children`** so the component definition controls internal layout.
    - Dynamic parameters are passed via `"properties": { "prop_name": "value" }`.
 5. **Verified Value Shapes**:
-   - Colors: `{"hex": "#23221e"}` or `{"raw": "var(--lumia-brand-cream)"}`.
+   - Colors: `{"hex": "#23221e"}` or `{"raw": "var(--brand-primary)"}`.
    - Typography: use explicit CSS property keys (`"font-size"`, `"line-height"`, `"letter-spacing"`).
    - Box-shadow: nested under `values` (`{"values": {"x": "0", "y": "4px", "blur": "12px", "spread": "0"}, "color": {...}}`).
 6. **Responsive Grammar**:
